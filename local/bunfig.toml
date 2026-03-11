@@ -1,0 +1,6 @@
+[install]
+production = false
+optional = true
+
+[test]
+testTimeout = 5000
