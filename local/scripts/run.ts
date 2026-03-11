@@ -28,7 +28,7 @@ async function main() {
 
   const entryFile = join(example.path, "index.ts");
   const proc = Bun.spawn({
-    cmd: [Bun.executablePath, entryFile],
+    cmd: [process.execPath, entryFile],
     cwd: example.path,
     env: {
       ...process.env,

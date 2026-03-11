@@ -14,7 +14,7 @@ async function runExampleTest(example: any): Promise<TestResult> {
 
   const testFile = join(example.path, "test.test.ts");
   const proc = Bun.spawn({
-    cmd: [Bun.executablePath, "test", testFile],
+    cmd: [process.execPath, "test", testFile],
     cwd: example.path,
     stdout: "ignore",
     stderr: "ignore",
